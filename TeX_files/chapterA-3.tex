@@ -1,0 +1,36 @@
+% !TeX root = ../main.tex
+\chapter{Introduction to C}
+
+One of the most popular languages ever developed is called C. It was created by a group including Dennis Ritchie and Brian Kernighan at Bell Laboratories between 1969 and 1973 to rewrite the UNIX operating system from its original assembly language. By many measures, C \footnote{including a family of closely related languages such as C\#, C++ and Objective-C} is the most widely used language in existence. Its popularity stems from a number of factors:
+\begin{itemize}
+	\item Available on a tremendous variety of platforms, from super computers down to embedded microcontrollers.
+	\item Relative Ease of use.
+	\item Moderate level of abstraction providing higher productivity that assembly language, yet giving the programmer a good understanding of how the code will be execute.
+	\item Suitability for generating high performance programs.
+	\item Ability to interact directly with the hardware.
+\end{itemize} 
+
+	\section{My First Program}
+		
+		A C program is a plain text file that describes operations for the computer to perform. The text file is then \textit{compiled}, converting into from the human readable format that is was written in to the machine readable format that is its needed to be executed. C programs are generally contained in one or more text files that end with the extention \enquote{.c}. 
+		
+		\begin{listing}[h]
+			\centering
+			\begin{ccode}
+#include<stdio.h>
+
+int main(void) {
+	printf("Hello World!\n");
+}
+			\end{ccode}
+			Which Outputs:
+			\begin{minted}{bash}
+$~ Hello World!
+			\end{minted}
+			\caption{\label{code:myfirstprogram} Our first see program}
+		\end{listing}
+	
+		In general, a C program is organised into one or more functions. Every program must include the \cinline{main} function, which is where the program starts executing. Most programs use other functions defined elsewhere in the code and/or in in a library. We can split our code in snippet \ref{code:myfirstprogram} into the header, the \cinline{main} function, and the body.
+		
+		
+		

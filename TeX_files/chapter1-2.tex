@@ -1,0 +1,39 @@
+% !TeX root = ../main.tex
+
+\chapter{Boolean Logic}
+	\section{Boolean Algebra}
+		\index{Boolean Algebra}
+		Boolean Algebra was developed by an English Mathematician who specialised in the field of Logic. In 1854 he published \textit{ \enquote{An Investigation of Laws and Thought} \citep{Boole54}} which layed out the framework. Formally, boolean algebra is defined as of a set of elements, $E$, a set of functions, $F$ and and a set of basic axioms that define the properties of $E$ and $F$. In Boolean Algebra the set of elements are variables and constants that can either have a value of \true or \false. In addition there are only three operations or functions that are permitted. The first of these is the logical OR \index{OR!Logical}, represented by a plus (e.g. $A + B$ \footnote{Some texts will also use $\cup$ or $\vee$}). The Logical OR operation returns \true if either of the values is also \true. For example $A + B$ will return \true if either $A$ or $B$ is \true. Next we have the logical AND \index{AND!Logical}, represented by a dot (e.g. $A \cdot B$ \footnote{Some texts will also use $\times$, $\cap$ or $\wedge$. Also note that like in Maths, you can write $A \cdot B$ as $AB$.}). The Logical AND operation returns \true if all of the values are true will return The third operation is that of negation or complementation, we denote a variable having been negated with a bar (e.g. $\bar{A}$) \footnote{Some texts will also use !, ~, ¬, '} \index{NOT!Logical}. 
+		
+		
+		We can combine these operations together to make new operations. As example lets take the exclusive-OR, or XOR function \index{XOR!Logical}. We define $A \oplus B$ \footnote{Some texts will also use $\veebar$} as returning \true when one, and only one, of its inputs are \true. The XOR operation can also be represented as 
+		
+		$$A \oplus B = A\cdot \bar{B} + \bar{A}\cdot B$$
+		
+		As mentioned in the previous chapter bits are the fundamental unit of the computer. This stream of 0's and 1's are what allow you to watch videos online, post to social media and order 200 rubber ducks from the internet. In this chapter we will layout the basic ways that we manipulate data in a binary format. 
+		
+		
+
+	\section{Logic Gates}
+		\index{Logic Gates} \glossary{Logic Gates} Logic gates are simple digital circuits that take one or more binary inputs and produce a binary output. Usually inputs are drawn with a symbol showing the input and the output. 
+		
+		\subsection{NOT Gate}
+			A \index{NOT!Gate} NOT gate, has one input $A$ and one output, $Y$
+			\begin{figure}
+				\begin{circuitikz} \draw 
+					(0,0) node[and port] (myand)  {}
+					(myand.in 1) node[anchor=east] {1}
+					(myand.in 2) node[anchor=east] {2}
+					(myand.out) node[anchor=west] {3}
+					;
+				\end{circuitikz}
+			\end{figure}
+\section{Karnaugh Maps}
+	Sometimes when you are simplifying a boolean equation you end up with a totally different equation instead of a simpler one. Karnaugh Maps were invented in 1953 by Maurice Karnaugh are a graphical method for simplifying Boolean equations. In order to understand how they work you need to recall that when we are minimising a logic problem we are grouping like terms together.
+		
+		\begin{figure}
+			sf
+		\end{figure}
+\section{Computer Arithmetic}
+	
+\section{Number Systems}

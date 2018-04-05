@@ -1,0 +1,70 @@
+\chapter{What is Binary?}
+	\section{Introduction}
+	In school, you learnt to count and do arithmetic in \textit{decimal}. Just as you have 10 fingers, there are 10 decimal digits $0,1,2, ..., 9$. Decimal digits are joined together to form longer decimal numbers. Each column of a decimal number has ten times the weight of the previous column. From right to left, the column weights are $1, 10, 100, 1000$ and so on. In general we can say that the $n^{th}$ has a value of $10 ^{(n - 1)}$.
+
+	\begin{equation}
+	9742_{10} = 9 \times 10^3 + 7 \times 10^2 + 4 \times 10^1 + 2 \times 10^0
+	\end{equation}
+
+	We can generalise this and say for a number $n$ in base $b$ which has digits $n_1, n_2, n_3, \dots n_{m-1}, n_m$ has a value of $N$ which is given by Equation \ref{equ:anynumber}
+
+	\begin{equation}
+		N = \sum_{i=0}^{i=m} n_i \times b^i
+		\label{equ:anynumber}
+	\end{equation}
+
+	Computers are made up of lots of little tiny electrical switches that have two states: one or off. We represent this using a binary number system.	We use the digits 0 or 1 to mean off and on respectively  Each digit is known as a bit and is a fundamental unit of information. We find that using a $n$-digit binary number we can represent $2^n$ different values. Table \ref{tab:BinandDec} shows this in action.
+	\begin{table}[h]
+		\begin{center}
+		\begin{tabular}{M{0.15\linewidth}M{0.15\linewidth}M{0.15\linewidth}M{0.15\linewidth}M{0.15\linewidth}}
+				\multicolumn{4}{c}{Binary Numbers} & Decimal Equivalent\\
+
+				1-Bit	& 2-Bit	& 3-Bit	& 4-Bit	&		\\
+				\hline
+				\hline
+				0		& 00	& 000	& 0000	& 0		\\
+				1		& 01	& 001	& 0001	& 1		\\
+						& 10	& 010	& 0010	& 2		\\
+						& 11	& 011	& 0011	& 3		\\
+						& 		& 100	& 0100	& 4		\\
+						& 		& 101	& 0101	& 5		\\
+						& 		& 110	& 0110	& 6		\\
+						& 		& 111	& 0111	& 7		\\
+						& 		& 		& 1000	& 8		\\
+						& 		& 		& 1001	& 9		\\
+						& 		& 		& 1010	& 10	\\
+						& 		& 		& 1011	& 11	\\
+						& 		& 		& 1100	& 12	\\
+						& 		& 		& 1101	& 13	\\
+						& 		& 		& 1110	& 14	\\
+						& 		& 		& 1111	& 15	\\
+			\end{tabular}
+			\caption{\label{tab:BinandDec} Binary Numbers and their Decimal Equivalent}
+		\end{center}
+	\end{table}
+	\subsection{Grouping Bits}
+		A group of eight bits is called a \textit{byte}. One byte can take $2^8 = 256$ possible values. Generally we measure the size of computer storage / memory in bytes rather than bits. We can also store data in a nibble, which is 4 bits. This gives you $2^4 = 16$ possible values, or one hexadecimal digit. Often when dealing with binary outputs we represent each byte as two hexadecimal digits. So \texttt{11010010} would be represented as \texttt{D2}.
+
+		Microprocessors handle data in chunks known as \textit{words}. The size of the word depends on the architecture used. Most computers these days use 64-bit computers, so they have 64-bit words. However, Arduino's use 8 bit words.
+
+	\subsection{File Sizes}
+		A video file might contain 1,039,297,516 bytes, this is clearly to big to be practical. There are two different schemes for simplifying bytes, one uses powers of 10 and the other powers of 2. The decimal prefixes follow the standard SI units: kilo, mega, giga etc. The binary prefixes follow the following pattern:
+			\begin{description}
+				\item[kibi] \si{\kibi} - \si[prefixes-as-symbols=false]{\kibi}
+				\item[mebi] \si{\mebi} - \si[prefixes-as-symbols=false]{\mebi}
+				\item[gibi] \si{\gibi} - \si[prefixes-as-symbols=false]{\gibi}
+				\item[tebi] \si{\tebi} - \si[prefixes-as-symbols=false]{\tebi}
+			\end{description}
+		So our video file from earlier is \SI{1.03929}{\giga\byte} or \SI{991.15}{\mebi\byte}. The difference between a \si{\kibi\byte} and \si{\kilo\byte} is why when you install a \SI{1}{\tera\byte} hard drive it appears as \SI{931}{\gibi\byte}.
+\section{Exercises}
+\subsection{Exam Style Questions}
+\begin{enumerate}
+	\item A flying saucer crashes into a cornfield. The investigators inspect the wreckage and find an engineering manual contain an equation in the Martian number system: $325 + 42 = 411$. If this equation is correct, how many fingers would you expect Martians to have?
+	\item Alice and Bob are having an argument. Bob says \enquote{All integers greater than zero and exactly divisible by six have exactly two 1's in their binary representation}. Alice disagrees, she says: \enquote{No, but all such numbers have an even number of 1's in their representation.} Do you agree with Alice, Bob, both or neither. Explain.
+\end{enumerate}
+\subsection{Programming Challenges}
+\begin{enumerate}
+	\item Write a program in Python to convert numbers from binary to decimal. The user should type in an unsigned binary number. The program should printout the decimal equivalent
+
+	\bonus Change your program from an arbitrary base $b_1$ to another base $b_2$ as specified by the user. Support bases up to 16, using the letters of the alphabet for digits greater than 9.
+\end{enumerate}

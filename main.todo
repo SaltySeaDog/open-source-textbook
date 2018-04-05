@@ -1,0 +1,428 @@
+* A Level Content
+# OCR only Content
+@ AQA only Content
+
+☐ PART 1 - Binary Manipulation:
+
+  ✔ 1.1. Binary @done (18-01-23 02:48)
+    ✔ Bits @done (18-01-22 03:39)
+    ✔ Names @done (18-01-23 02:47)
+
+  ☐ 1.2. Boolean Logic
+    ✔ Boolean Operations @done (18-03-26 03:15)
+      ✔ NOT @done (18-03-26 03:02)
+      ✔ AND @done (18-03-26 03:02)
+      ✔ OR @done (18-03-26 03:02)
+      ✔ XOR @done (18-03-26 03:15)
+    ☐ Logic Gates
+    ☐ Half Adder
+    ☐ Full Adder
+    ☐ Flip Flop
+    ☐ Truth Tables
+    ☐ Boolean Expressions
+    ✔ Boolean Algebra @done (18-03-12 00:30)
+    ☐ FSM Machines
+    ☐ @Karnaugh Maps
+  
+☐ PART 2 - Manipulating Data:
+
+  ☐ 2.1. Data Types
+    ☐ Integer
+      ☐ Decimal
+      ☐ Binary
+      ☐ Hexadecimal
+      ☐ Signed and Unsigned
+      ☐ Two's Complement
+    ☐ Float
+      ☐ Fixed Point Form
+      ☐ * Floating Point Form
+      ☐ * Normalisation
+      ☐ * Rounding Errors
+    ☐ Boolean
+    ☐ Character
+      ☐ ASCII and Unicode
+    ☐ String
+    ☐ Date / Time
+    ☐ * Pointer
+    ☐ * Range and Precision
+    ☐ * Underflow and Overflow
+
+  ☐ 2.2. Arithmetic Operations
+    ☐ Additon
+    ☐ Subtraction
+    ☐ Multiplication
+    ☐ Float Divison
+    ☐ Integer Divison
+    ☐ Exponentiation
+    ☐ Rounding
+    ☐ Truncation
+
+  ☐ 2.3. Storing Data
+  	☐ Error Checking
+  	☐ Error Correction
+  	☐ DAC+
+  	☐ ADC
+  	☐ Bit Patterns
+  	☐ Images
+  		☐ Resolution
+  		☐ Colour Depth
+  		☐ Size
+  		☐ Metadata
+  		☐ * Vector Graphics
+  			☐ SVG
+  	☐ Sound
+  		☐ Sample Resolution
+  		☐ Sampling Rate
+  		☐ Nyquist theorem
+  		☐ MIDI
+  	☐ Data Compression
+  		☐ Run length
+  		☐ Dictionary Based
+  		☐ Lossy vs Lossless
+  	☐ Encryption
+  		☐ Caesar Cipher
+  		☐ Verman Cipher
+
+  ☐ 2.4. Classification of Algorithms
+    ✔ Big O Notation @done (18-03-13 21:31)
+  	☐ * Greedy Algorithms
+  	☐ * Limits of Computation
+    ✔ * P vs NP programs @done (18-03-13 21:54)
+  	☐ * Halting Problem
+  	☐ * Turing Machine
+  	☐ * State Transisition Diagram
+
+  ☐ 2.5. Data Structures
+    ☐ Arrays
+    ☐ Fields, Records and Files
+      ☐ R/W to text file
+      ☐ R/W to binary file
+    ☐ * Abstract Data type
+      ✔ Queues @done (18-02-14 16:38)
+      ✔ Stack @done (18-02-14 16:38)
+      ☐ Graph
+        ☐ Adjacency Matrix
+        ☐ Adjacency List
+      ☐ Tree
+      ☐ Hash Table
+      ✔ Dictionary @done (18-02-24 20:43)
+      ☐ Vector @
+        ☐ Dot Product
+        ☐ Angle Between to Vectors
+      ☐ * Static vs. Dymanic Structures
+
+  ☐ 2.6. * Algorithms
+  	☐ Graph Traversal
+  		☐ Bredth first
+  		☐ Depth First
+  	☐ Tree Traversal
+  		☐ Pre Order
+  		☐ Post Order
+  		☐ In Order
+  	☐ Reverse Polish
+  	☐ Searching
+  		☐ Linear
+  		☐ Binary
+  		☐ Binary Tree
+  	☐ Sorting
+  		☐ Bubble Sort
+  		☐ Merge Sort
+      ☐ @ Insertion Sort
+      ☐ @ Quick Sort
+  	☐ Optimisation
+  		☐ Dijkstras
+  		☐ # A Star
+
+☐ PART 3 - THE PHYSICAL COMPUTER:
+  ☐ 3.1. Hardware
+  	☐ Relationship between hardware and software
+  	☐ Main Memory
+      ✔ Stored Program @done (18-03-12 21:16)
+
+  	☐ Secondary Storage
+  		☐ HDD
+  		☐ SSD
+  			☐ NAND Flash Memory
+  			☐ Controller
+  			☐ Pages
+  		☐ CD / CD
+  	
+  	☐ Addressable Memory
+
+  ☐ 3.2. The Processor
+  	☐ Internals
+  		☐ ALU
+  		☐ Clock
+  		☐ General Purpose Regiesters
+  		☐ PC
+  		☐ CIR
+  		☐ MAR
+  		☐ MBR
+  		☐ Statu
+  		☐ F > D > E Cycle
+  	☐ Instruction Set
+  	☐ Opcodes and Operands
+  	☐ Addressing Modes
+      ✔ Immediate @done (18-03-14 13:52)
+      ✔ Direct @done (18-03-14 18:59)
+      ✔ Indirect @done (18-03-14 19:46)
+      ☐ Register Addressing
+        ☐ Indexed
+        ☐ Register to Register
+  	☐ Assembly
+  		☐ LOAD, ADD, SUB, STR, BRA, AND, OR, >>, <<, HALT
+  	☐ Performance
+  		☐ Cores
+  		☐ Cache
+  		☐ Clock SPeed
+  		☐ Word Length
+		☐ Bus Width
+      ☐ Address Bus
+      ☐ Data Bus
+      ☐ Control Bus
+    ☐ I/o Controllers
+      ☐ Barcode Reader
+      ☐ Digital Camera
+      ☐ Laser Printer
+      ☐ RFID
+    ☐ Harvard vs von Neumann
+    ☐ Pipelining
+    ☐ Types of Processor
+
+  ☐ 3.3. Software
+    ☐ Classification of Software
+    ☐ OS's
+      ☐ Resource Management
+      ☐ Allocate Processors
+      ☐ Manage I/O devices
+      ☐ @ Memory Management*
+      ☐ @ Scheduling
+    ☐ Utility Programs
+    ☐ Libaries
+    ☐ Translators
+      ☐ Assembler
+      ☐ Compiler
+      ☐ Interpreter
+      ☐ Bytecode
+
+☐ PART 4 - EXCHANGING DATA:
+
+  ☐ 4.1. Networking and The Internet
+  	☐ Communication
+  		☐ Serial v Parallel
+  		☐ Synchronos v Asynchrons
+  		☐ Start and Stop Bits
+  		☐ Baud
+  		☐ Bit Rate
+  		☐ Bandwidth
+  		☐ Latency
+  		☐ Protocol
+  	☐ Topologies
+  		☐ Physic Star
+  		Local Bus
+  	☐ P2P vs CS
+  	☐ Wifi
+  		☐ Security
+  		☐ SSID
+  		☐ Carrier Sense, Multiple Access
+  		☐ Request to Send
+
+  ☐ 4.2. *The Internet
+    ☐ Structure
+    ☐ @ Building Webpages
+    ☐ Packet Switiching
+    ☐ Routers & Gateway
+    ☐ Componants of a Packet
+    ☐ URLs, FQDN, DNS
+    ☐ IP addresses
+    ☐ IP's split
+      ☐ IPv4 vs IPv6
+      ☐ Routable vs. Non Routable
+    ☐ Domain Names
+    ☐ Security
+  		☐ Firewall
+  			☐ Packet Filtering
+  			☐ Proxy Server
+  			☐ Stateful Insepction
+  		☐ Symettric and Asymetric Encyrption
+  		☐ Key Exchange
+  		☐ Digital Certicates and Signatues
+  		☐ Worms, Trojans and Viruses
+  	☐ TCP/IP
+  		☐ Application, Transport, Network and Link Stack
+  		☐ Role of Sockets
+  		☐ Well known ports
+  			☐ Port Forwarding
+  		☐ Mac Addresses
+  		☐ FTP, HTTP, HTTPS, POP3, SMTP, SSH
+  		☐ Use FTP and SSH
+  		☐ NAT, DHCP
+  		☐ Role of email server and web server
+  		☐ Role of the Web Page
+  	☐ Subnet Masking
+  	☐ Websocket Protocol
+  	☐ CRUD
+  	☐ REST
+  	☐ JSON v XML
+  	☐ Thin v Thick Client Computing
+    ☐ @Page Rank
+
+  ☐ 4.3. * Fundamentals of Databases
+  	☐ Data Model from Data
+  	☐ Entity Relationship Diagrams
+  	☐ Relational Databases
+  		☐ Attribute
+  		☐ Primary Key
+  		☐ Composite Primary Key
+  		☐ Foreign Key
+  	☐ Normalisation techniques
+  		☐ 3rd Normal Form
+  	☐ Use SQL
+  	☐ CLient Server Database
+  	☐ Big Data
+  		☐ Volume
+  		☐ Velocity
+  		☐ Variety
+
+☐ PART 5 - PROGRAMMING:
+
+  ☐ 5.1. Programming Concepts
+  	☐ Variable and Constant Declaration
+  	☐ Assignment
+  	☐ Iteration
+  	☐ Selection
+  	☐ Subroutine
+  		☐ Paramaters
+  		☐ Returning Values
+  		☐ Local Vars
+  		☐ Global Variables
+  	☐ Random Numbers
+  	☐ Exception Handling
+  	☐ * Stack Frame
+  		☐ Return Addresses
+  		☐ Parameters
+  		☐ Local Variables
+  	☐ * Recursive Techniques
+    ☐ Concurrent Programming
+    ☐ @ Back Tracking
+    ☐ @ Performance MOdelling
+    ☐ @ Pipelining
+    ☐ @ Heurisitcs
+
+  ☐ 5.2. Aspects of Software Development
+    ☐ Types of Software Development
+      ☐ Waterfall
+      ☐ Agile
+      ☐ @etc.
+  	☐ Analysis
+  	☐ Design
+  	☐ Implementation
+  	☐ Testing
+  	☐ Evaluation
+  	☐ Writing and Following Algorithms
+  	☐ Abstraction
+  		☐ Information Hiding
+  		☐ Procedual Abstraction
+  		☐ Functional Abstraction
+  		☐ Data Abstraction
+  		☐ Problem Abstraction
+  		☐ Decomposition
+  		☐ Composition
+  		☐ Automation
+
+
+  ☐ 5.3. String Handling Operations
+  	☐ Length
+  	☐ Position
+  	☐ Substring
+  	☐ Concatenation
+  	☐ Character <-> char code
+  	☐ String conversion operations
+
+  ☐ 5.4. Procedual-Orientated
+  	☐ Structured Approabce
+  	☐ Hierachy Charts
+
+
+  ☐ 5.5. * Fundamentals of Functional Programming
+  	☐ Function Type
+  	☐ First Class Object
+  	☐ Function Application
+  	☐ Partial Function Application
+  	☐ Compostion of Functions
+  	☐ Haskall
+  	☐ Higher Order Functions
+  	☐ Map, Filter, Reduce, Fold
+  	☐ Lists in  Functional Programming
+
+  ☐ 5.6. * Object-Orientated Programming
+  	☐ Classes
+  	☐ Object
+  	☐ Instantiation
+  	☐ Encapsulation
+  	☐ INheritance
+  	☐ Aggregation
+  	☐ Compostion
+  	☐ Polymorphism
+  	☐ Overriding
+  	☐ Draw Class diagrams
+  	☐ Unifided Modelling Diagrams
+
+  ☐ 5.7. @ Regular Languages
+    ☐ Finite State Machines
+    ☐ * Maths for Regular Expressions
+      ☐ Finite Sets
+      ☐ Infinite Sets
+      ☐ Countably Infinate Sets
+      ☐ Cardinality of a finite set
+      ☐ Cartesian Product of Sets
+      ☐ Subsets
+      ☐ Union
+    ☐ Membership
+    ☐ * Regular Expressions
+    ☐ * Backus-Naur Form
+    ☐ Synatx diagrams
+
+
+ ☐  
+
+☐ APPENDIX 
+  ☐ A.1 Introduction to UNIX
+  
+  ☐ A.2 Introudction to C
+    ✔ History @done (18-03-26 02:19)
+    ☐ My First C Program
+      ✔ Hello World @done (18-03-26 03:17)
+      ☐ Dissection
+      ☐ Running a C Program
+    ☐ Compilation
+      ☐ Comments
+      ☐ #define
+      ☐ #include
+    ☐ Variables
+      ☐ C's view of Memory
+      ☐ Primitive Data Types
+      ☐ Global vs. Local Variables
+      ☐ Intializing Variables
+    ☐ Operators
+    ☐ Function Calls
+    ☐ Control Flow
+      ☐ Conditonal Statements
+      ☐ Loops
+    ☐ Variables II: The Electric Boogaloo
+      ☐ Pointers
+      ☐ Arrays
+      ☐ Characters
+      ☐ Strings
+      ☐ Structures
+      ☐ typedef
+      ☐ Dynamic Memory Allocation
+    ☐ Standard Libaries
+      ☐ stdio
+      ☐ stdlib
+      ☐ math
+      ☐ string
+  
+  ☐ A.3 Introduction to Python
+
+  ☐ A.4 Introduction to Latex

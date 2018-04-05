@@ -1,0 +1,94 @@
+\chapter{Storing Data}
+	
+
+	
+	\section{Analogue and Digital Systems}
+	
+		\subsection{Digital to Analogue Conversion}
+		
+		\subsection{Analogue to Digital Conversion}
+		
+	\section{Images}
+		
+		\subsection{Resolution and Colour Depth}
+		
+		\subsection{Metadata}
+		
+		\subsection{Vector Graphics}
+			
+			\subsubsection{SVG}
+			
+	\section{Sound}
+		
+		\subsection{Sample Resolution and Rate}
+		
+		\subsection{Nyquist Theorem}
+		
+		\subsection{MIDI}
+	\section{Errors in Data}
+		
+		\subsection{Error Detecting Codes}
+		
+			\subsubsection{Parity EDCs}
+		
+		\subsection{Error Correcting Codes}
+		
+			\subsubsection{Hamming Codes}
+		
+	
+	
+	\section{Data Encryption}
+	
+		\subsection{Caesar Cipher}
+		
+		\subsection{Verman Cipher}
+		
+		\subsection{Public Key Cryptography}
+		
+	\section{Data Compression}
+	
+		\subsection{Lossless Compression}
+		
+			\subsubsection{Huffman Encoding}
+				\index{Huffman Encoding} Huffman codes employ a \textit{variable length} word to compress data where certain elements appear more frequently than others. We shall look at a simple example before going into more depth. Lets say a weather station in the Scottish highlands sends a daily report using a binary code. At the moment it uses the 2-bit codes shown in Table \ref{tab:2bitHuffman}
+				
+				\begin{table}[h!]
+					\centering
+					\renewcommand{\arraystretch}{1.5}
+					\begin{tabular}{M{0.2\textwidth} M{0.2\textwidth}}
+						\hline
+						\textbf{Weather} & \textbf{Code} \\ \hline \hline
+						Raining          & \texttt{00}   \\
+						Windy            & \texttt{01}   \\	
+						Snowing          & \texttt{10}   \\
+						Sunny            & \texttt{11}   \\
+					\end{tabular}
+					\caption{\label{tab:2bitHuffman} Coding four states with a 2-bit code}
+				\end{table} 
+				
+				At first glance this would appear to be as good as you can get. After all theres no way to encode 4 items using just one bit. However we can make use of probability to reduce the \textit{average} length sent. If you make the observations that far most common report is that it is raining, you can assign as small as possible code to \footnote{Note that you can't just assign    } 
+				
+				\begin{table}[h!]
+					\centering
+					\renewcommand{\arraystretch}{1.5}
+					\begin{tabular}{M{0.2\textwidth} M{0.2\textwidth} M{0.2\textwidth}}
+						\hline
+						\textbf{Weather} & \textbf{Frequency} & \textbf{Code} \\ \hline\hline
+						Raining          & \SI{75}{\percent} & \texttt{0}    \\
+						Windy            & \SI{15}{\percent} & \texttt{10}   \\
+						Snowing          & \SI{5}{\percent}  & \texttt{110}  \\
+						Sunny            & \SI{5}{\percent}  & \texttt{111}
+					\end{tabular}
+					\caption{\label{tab:HuffmanWeather} A Huffman code for four items.}
+				\end{table} 
+				
+			
+			\subsubsection{Run Length Encoding}
+			
+			\subsubsection{Lempel-Ziv}
+			
+			\subsubsection{Quadtrees}
+		
+		\subsection{Lossy Compression}
+			Lossy compression algorithms 
+			\subsubsection{JPEG Compression}

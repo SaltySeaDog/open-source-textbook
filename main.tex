@@ -1,0 +1,158 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{pbox}
+\usepackage{framed}
+\usepackage{units}
+\usepackage[table, dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
+\usepackage{placeins}
+\usepackage{pdflscape}
+\usepackage{makeidx}
+\usepackage{subfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{rotating}
+\usepackage[export]{adjustbox}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{marginnote}
+\usepackage{url}
+\usepackage{float}
+\usepackage[binary-units]{siunitx}
+\usepackage{xlop}
+\usepackage[chapter]{minted}
+\usepackage{karnaughmap}
+\usepackage{circuitikz}
+\usepackage{natbib}
+\usepackage [autostyle, english = british]{csquotes}
+%\usepackage{gnuplot}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{T}[1]{>{\ttfamily\centering\arraybackslash}m{#1}}
+\newcolumntype{R}[1]{>{\flushright\arraybackslash}m{#1}}
+\newcolumntype{L}[1]{>{\centering\flushleft\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+
+%%% Biblography Commands
+
+\setlength{\bibsep}{3mm}
+\setlength{\bibhang}{5em}
+\bibliographystyle{agsm}
+\setcitestyle{authoryear,round}
+
+
+%%% Chapter Statment 
+
+\newenvironment{statement}
+{
+	
+	\begin{center}
+		\begin{minipage}[c]{0.8\textwidth}
+			\it
+				
+			}
+			{		
+			\it
+		\end{minipage}
+	\end{center}
+}
+
+\renewcommand \thepart {\arabic{part}}
+\renewcommand\thechapter{\thepart.\arabic{chapter}}
+
+\makeatletter
+\@addtoreset{chapter}{part}
+\makeatother
+
+
+\setkarnaughmap[omitzeros=false,omitidx=true]
+\DeclareSIUnit{\year}{yrs}
+
+
+
+\makeindex
+\makeglossary
+
+\begin{document}
+\title{A Level Computing}
+\date{\today}
+
+\newcommand\bonus{\textcolor{Black!80}{\textbf{BONUS: }}}
+\newcommand\bigo[1]{\mathcal{O}(#1)}
+\newcommand\bigO[1]{$\bigo{#1}$}
+\newcommand{\true}{\mintinline{c}{true} }
+\newcommand{\false}{\mintinline{c}{false} }
+\newcommand{\code}[2][c]{\mintinline{#1}{#2}}
+\newcommand{\RTL}[1]{\mintinline[escapeinside=||]{hs}{#1}}
+\newcommand{\ARM}[1]{\mintinline[escapeinside=||]{arm}{#1}}
+\newcommand{\LMC}[1]{\texttt{#1}}
+\newminted{c}{}
+\newmintinline{c}{}
+
+\usemintedstyle{bw}
+\renewcommand{\listingscaption}{Snippet}
+\maketitle
+\frontmatter
+\tableofcontents
+
+\mainmatter
+
+\part{Binary Manipulation}
+	\include{./TeX_files/chapter1-1}	
+	\include{./TeX_files/chapter1-2}
+
+\part{Manipulating Data}
+	\include{./TeX_files/chapter2-1}
+	\include{./TeX_files/chapter2-2}
+	\include{./TeX_files/chapter2-3}
+	\include{./TeX_files/chapter2-4}
+	\include{./TeX_files/chapter2-5}
+	\include{./TeX_files/chapter2-6}
+
+\part{The Physical Computer}
+	\include{./TeX_files/chapter3-1}
+	\include{./TeX_files/chapter3-2}
+	\include{./TeX_files/chapter3-3}
+
+\part{Web Applications}
+	\include{./TeX_files/chapter4-1}
+	\include{./TeX_files/chapter4-2}
+	\include{./TeX_files/chapter4-3}
+
+\part{Programming}
+	\include{./TeX_files/chapter5-1}
+	\include{./TeX_files/chapter5-2}
+	\include{./TeX_files/chapter5-3}
+	\include{./TeX_files/chapter5-4}
+	\include{./TeX_files/chapter5-5}
+	\include{./TeX_files/chapter5-6}
+	\include{./TeX_files/chapter5-7}
+\appendix
+\part[Appendices: Introduction to Computing]{The Appendices \\ \small{Introduction to Computer Science}}
+	\include{./TeX_files/chapterA-1}	
+	\include{./TeX_files/chapterA-2}
+	\include{./TeX_files/chapterA-3}	
+	\include{./TeX_files/chapterA-4}
+	\include{./TeX_files/chapterA-5}
+	\include{./TeX_files/chapterA-6}
+
+\backmatter
+\printindex
+\bibliography{main}
+
+% bibliography, glossary and index would go here.
+
+\end{document}
+
